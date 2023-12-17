@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+void moveZeros(int arr[],int n) {
+int left =0;
+int right=0;
+while(right < n) {
+    if (arr[right]== 0) {
+        right ++;
+    }
+    else {
+        swap(arr[right] , arr[left]);
+        left++;
+        right++;
+    }
+}
+}
+int main()
+{
+int n;
+cin >>n;
+int arr[n] ;
+for (int i = 0 ;i<n ;i++) {
+    cin >> arr[i] ;
+}
+
+for (int i = 0 ;i<n ;i++) {
+    cout <<arr[i] <<endl;
+}
+    return 0;
+}
+
+//================
